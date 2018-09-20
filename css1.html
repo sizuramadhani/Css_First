@@ -1,0 +1,56 @@
+<!--  
+CSS = Cascading Style Sheet
+fungsinya untuk mendesign halaman html 
+CSS biasanya ditaro diantara style jika dia menyatu dengan html
+-->
+<!-- ini disebut cara internal style-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<style type="text/css">
+
+h1{ /*h1 ini disebut element selector
+      yang ada didalam kurung kurawal itu disebut declaration
+	*/
+	text-align: center;
+	/*text-align = itu property,dan center = itu value*/
+}
+    /*id selector menggunakan tanda (#)*/
+    #heading1 {
+    	text-align: right;
+    }
+	/* class selector ditandai dengan (.)*/
+	.center {
+		text-align: center;
+		color: green;
+
+	}
+	/*elemen class selector */
+	h2.mada{
+		color: blue;
+	}
+    /*grouping selector*/
+	h2, h3, h4{
+		text-align: center;
+		color: yellow;
+	}
+	/* urutan tingkatan yg lebih kuat : 
+	 id > class > element
+	 */
+
+
+</style>
+<body>
+<h1 id="heading1">ini heading 1</h1>
+<h1 class="center">ini heading juga</h1>
+<!-- memanggil dua class yang berbeda-->
+<h2 class="mada">ini heading 2</h2>
+<h2>ini heading 2 juga</h2>
+<h3>ini heading 3</h3>
+<h4>ini heading 4</h4>
+</body>
+</html>
